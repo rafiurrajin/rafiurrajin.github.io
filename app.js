@@ -7,7 +7,7 @@ async function getData() {
     const v1=x1.value.toLowerCase();
     const v2=x2.value.toLowerCase();
     const response = 
-      await fetch(`http://localhost:8000/out/${v1+v2}.txt`,
+      await fetch(`https://rafiurrajin.github.io/out/${v1+v2}.txt`,
       { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -15,7 +15,7 @@ async function getData() {
     const data = await response.text();
 
     const response2 = 
-      await fetch(`http://localhost:8000/main/${v1}.txt`,
+      await fetch(`https://rafiurrajin.github.io/main/${v1}.txt`,
       { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
