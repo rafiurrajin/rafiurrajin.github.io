@@ -1,0 +1,16 @@
+div h1{
+    text-align: center;
+    color: green;
+    background-color: lightgray;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px 50px;
+}
+body{
+    background-color: brown;
+}
+#k{
+    background-color: gray;
+    border: 8px solid black;
+    margin: 20px;
+}
