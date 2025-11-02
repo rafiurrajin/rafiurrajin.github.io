@@ -4,8 +4,8 @@ const y=document.getElementById('y');
 
 async function getData() {
   try {
-    const v1=x1.value.toLowerCase();
-    const v2=x2.value.toLowerCase();
+    const v1=x1.value.toUpperCase();
+    const v2=x2.value.toUpperCase();
     const response = 
       await fetch(`https://rafiurrajin.github.io/out/${v1+v2}.txt`,
       { cache: 'no-store' });
