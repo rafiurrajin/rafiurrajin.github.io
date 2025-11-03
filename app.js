@@ -7,7 +7,7 @@ async function getData() {
     const v1=x1.value.toUpperCase();
     const v2=x2.value.toUpperCase();
     const response = 
-      await fetch(`https://rafiurrajin.github.io/out/${v1+v2}.txt`,
+      await fetch(`https://rafiurrajin.github.io/out/${v2}.txt`,
       { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
